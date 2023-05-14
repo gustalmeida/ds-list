@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class GameListService {
+public class GameListService implements IGameListService{
 
     @Autowired
-    GameListRepository gameListRepository;
+    private GameListRepository gameListRepository;
 
     @Transactional(readOnly = true)
     public List<GameListDTO> findAll() {

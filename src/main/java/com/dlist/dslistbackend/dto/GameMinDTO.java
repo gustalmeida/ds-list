@@ -2,6 +2,7 @@ package com.dlist.dslistbackend.dto;
 
 import com.dlist.dslistbackend.entities.Game;
 
+import com.dlist.dslistbackend.projections.GameMinProjection;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,6 +18,15 @@ public class GameMinDTO {
     private String shortDescription;
 
     public GameMinDTO(Game entity) {
+        id = entity.getId();
+        title = entity.getTitle();
+        year = entity.getYear();
+        imgUrl = entity.getImgUrl();
+        shortDescription = entity.getShortDescription();
+
+    }
+
+    public GameMinDTO(GameMinProjection entity) {
         id = entity.getId();
         title = entity.getTitle();
         year = entity.getYear();
