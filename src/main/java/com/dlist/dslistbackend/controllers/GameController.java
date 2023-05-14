@@ -1,7 +1,6 @@
 package com.dlist.dslistbackend.controllers;
 
 import com.dlist.dslistbackend.dto.GameMinDTO;
-import com.dlist.dslistbackend.entities.Game;
 import com.dlist.dslistbackend.services.IGameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
