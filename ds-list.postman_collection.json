@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "4f5bc0c6-e286-4868-bb83-4f84ccd1a5fd",
+		"name": "ds-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Games by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/lists/2/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lists",
+						"2",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Games  by lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List replacement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sourceIndex\": 3,\n    \"destinationIndex\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/lists/2/replacement",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"lists",
+						"2",
+						"replacement"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
